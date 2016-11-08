@@ -35,6 +35,8 @@ int mousePosX1 = 0;
 int mousePosY1 = 0;
 int mousePosX2 = 0;
 int mousePosY2 = 0;
+boolean mouseClicked = false;
+ 
 void drawGrid()
 {
   // Set the border that holds the grid values to be 10% of the window size
@@ -73,9 +75,9 @@ void plotStar()
   }
 }
 
-void mouse()
+void mouseClicked()
 {
-    boolean mouseClicked = false;
+   
 
     int mousePosX1 = mouseX;
     int mousePosY1 = mouseY;
@@ -98,16 +100,11 @@ void mouse()
 }
 
 
-void mouseReleased()
-{
-    line(mousePosX1,mousePosY1,mousePosX2,mousePosY2);
-}
-
 void draw()
 {
 
   drawGrid();
   plotStar();
-  mouse();
+line(mousePosX1,mousePosY1,mousePosX2,mousePosY2);
 
 }
