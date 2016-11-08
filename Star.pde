@@ -15,7 +15,7 @@ class Star
     String[] parts = data.split(",");
       
     // Assign past of the data to variables
-    hab = Integer.parseInt(parts[2]);
+    //hab = Integer.parseInt(parts[2]);
     DisplayName = parts[3];
     Distance = Float.parseFloat(parts[12]);
     Xg = Float.parseFloat(parts[13]);
