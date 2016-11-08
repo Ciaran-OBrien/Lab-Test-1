@@ -50,8 +50,17 @@ for(int i=border; i <=width; i+=lineWidth){
  line(border,w,width,w);
  }
 }
+
+void plotStar()
+{
+  fill(255,0,0);
+  ellipse(200,200,10,10);
+
+}
+
 void draw()
 {
 
   drawGrid();
+  plotStar();
 }
