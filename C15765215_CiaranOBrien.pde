@@ -29,6 +29,7 @@ void loadData()
   
 }
 
+// Delcar variables
 int border;
 float lineWidth = height/2;
 int mousePosX1 = 0;
@@ -64,10 +65,12 @@ void plotStar()
   
     for (int i = 0; i<starArray.size() ; i++)
   {
+    // Map the position of the stars with repsect to the size of the grid
     float x = map(starArray.get(i).Xg,-5,5, 0 + border,width);
     float y = map(starArray.get(i).Yg, -5,5, 0 , height + border);
     fill(255,0,0);
     ellipse(x,y,10,10);
+    // allgin Text
     textAlign(LEFT);
     textAlign(CENTER, BOTTOM);
     text(starArray.get(i).DisplayName,x,y);
@@ -75,6 +78,7 @@ void plotStar()
   }
 }
 
+// tried to get mouse click funtion working with two positon of mouseX and mouseY
 void mouseClicked()
 {
    
